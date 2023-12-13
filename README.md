@@ -20,7 +20,7 @@ PRC-20 processes transactions in JSON format and is comprised of three fundament
 
 **Deploy**
 
-To deploy an inscription, developers are required to submit the corresponding JSON format document to Arweave, and the receiving address must be the black hole address **`AAA..AA`**.
+To deploy an inscription, developers are required to submit the corresponding JSON format document to Arweave, and the receiving address must be the black hole address **`AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`**.
 
 All characters should be in lowercase, and the length of **`tick`** should be 4 characters. To mitigate dust attacks, the deploy operation must transfer 1 AR to the black hole address.
 
@@ -37,7 +37,7 @@ All characters should be in lowercase, and the length of **`tick`** should be 4 
 
 **Mint**
 
-Complete a mint transaction by submitting a JSON format document. The receiving address must be the black hole address **`AAA..AA`**.
+Complete a mint transaction by submitting a JSON format document. The receiving address must be the black hole address **`AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`**.
 
 Ensure that **`tick`** in mint matches the **`tick`** in deploy. The **`amt`** must less than or equal to the **`lim`** in deploy. Burning a specified quantity of AR, as indicated in the deploy transaction, is necessary for the mint operation.
 
