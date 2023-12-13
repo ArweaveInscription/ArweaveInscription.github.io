@@ -39,7 +39,7 @@ All characters should be in lowercase, and the length of **`tick`** should be 4 
 
 Complete a mint transaction by submitting a JSON format document. The receiving address must be the black hole address **`AAA..AA`**.
 
-Ensure that **`tick`** in mint matches the **`tick`** in deploy. The **`amt`** must align with the **`lim`** in deploy. Burning a specified quantity of AR, as indicated in the deploy transaction, is necessary for the mint operation.
+Ensure that **`tick`** in mint matches the **`tick`** in deploy. The **`amt`** must less than or equal to the **`lim`** in deploy. Burning a specified quantity of AR, as indicated in the deploy transaction, is necessary for the mint operation.
 
 ```Json
 { 
