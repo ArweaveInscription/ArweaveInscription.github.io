@@ -31,7 +31,7 @@ All characters should be in lowercase, and the length of **`tick`** should be 4 
   "tick": "aris",
   "max": "66000000",
   "lim": "1000",
-  "burn": "0.1"
+  "burn": "0.05"
 }
 ```
 
