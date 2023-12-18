@@ -30,8 +30,8 @@ All characters should be in lowercase, and the length of **`tick`** should be 4 
   "op": "deploy",
   "tick": "aris",
   "max": "66000000",
-  "lim": "1000",
-  "burn": "0.05"
+  "lim": "100",
+  "burn": "0.01"
 }
 ```
 
@@ -46,7 +46,7 @@ Ensure that **`tick`** in mint matches the **`tick`** in deploy. The **`amt`** m
   "p": "prc-20",
   "op": "mint",
   "tick": "aris",
-  "amt": "1000"
+  "amt": "100"
 }
 ```
 
@@ -80,7 +80,7 @@ Here are the detailed indexing rules we follow:
 
 - Inscriptions must be valid JSON (not JSON5).
 - JSON must have "p", "op", "tick" fields, where "p"="prc-20", "op" is in ["deploy", "mint", "transfer"]
-    - If op is deploy, JSON must have a "max" and "burn" field. "lim" is optional. If "lim" is not set, it will be equal to "max".
+    - If op is deploy, JSON must have a "max" and "burn" field. "lim" is optional. If "lim" is not set, it will be equal to "max". the minimum mint "burn" fee is 0.001 ar
     - If op is mint or transfer, JSON must have an "amt" field.
 - All required JSON fields must be strings. Numerical values like max, lim, amt, etc., are not accepted. Additional fields not discussed here can be of any type.
 - Empty strings in numerical fields are invalid.
@@ -98,7 +98,7 @@ You can use the following link to cross assets like ETH and USDT to the Arweave 
 
 After cross-chain transfer, ETH and USDT can be exchanged for AR using Arweave's native DEX, accessible at: https://app.permaswap.network/.
 
-If you are an Arweave native user, it is also necessary to deposit AR into everPay for the payment of the inscription's burnFee.
+If you are an Arweave native user, it is also necessary to deposit AR into everPay for the payment of the inscription's burn fee.
 
 ## Guide
 
