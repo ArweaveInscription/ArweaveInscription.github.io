@@ -80,7 +80,7 @@ Here are the detailed indexing rules we follow:
 
 - Inscriptions must be valid JSON (not JSON5).
 - JSON must have "p", "op", "tick" fields, where "p"="prc-20", "op" is in ["deploy", "mint", "transfer"]
-    - If op is deploy, JSON must have a "max" field. "lim" is optional. If "lim" is not set, it will be equal to "max".
+    - If op is deploy, JSON must have a "max" and "burn" field. "lim" is optional. If "lim" is not set, it will be equal to "max".
     - If op is mint or transfer, JSON must have an "amt" field.
 - All required JSON fields must be strings. Numerical values like max, lim, amt, etc., are not accepted. Additional fields not discussed here can be of any type.
 - Empty strings in numerical fields are invalid.
